@@ -1,0 +1,14 @@
+spring.application.name: dot-recipe
+spring:
+  datasource:
+    hikari:
+      password: ${DATASOURCE.PASSWORD}
+      username:  ${DATASOURCE.USERNAME}
+      jdbc-url: ${DATASOURCE.URL}
+    url: ${DATASOURCE.URL}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate.hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
